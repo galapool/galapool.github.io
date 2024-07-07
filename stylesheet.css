@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+}
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(images/Blue.jpg);
+}
+
+
+.container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #1f2935;
+}
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+}
+input{
+	width: 100%; /*ini adalah kolom lainnya*/
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #2d3a45; /* Ubah warna latar belakang sesuai keinginan Anda */
+    color: white; /* Ubah warna teks jika diperlukan */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Menambahkan border radius */
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+	background-color: #2d3a45; /* Ubah warna latar belakang sesuai keinginan Anda */
+	color: white;
+	border: none;
+}
+#submit{
+	border: none;
+	background-color: white;
+	color: black;
+	width: 438px;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #0ef;
+}
+
+
+/* General style */
+input[type="date"] {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: #ffffff;
+}
+
+input[type="date"]:after {
+    content: '\f073'; /* Unicode karakter untuk ikon kalender */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome harus di-load sebelumnya */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Ganti dengan warna yang Anda inginkan */
+    pointer-events: none;
+}
